@@ -36,7 +36,7 @@ function App() {
           />
         </div>
         <div>
-          <label for="password">password: </label>
+          <label for="password">Password: </label>
           <input
             type="password"
             id="password"
