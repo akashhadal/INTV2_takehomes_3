@@ -54,7 +54,6 @@ const LocationSelector = () => {
             <h1 style={{display:"flex", justifyContent:"center"}}>Select Location</h1>
             <div style={{display:"flex",justifyContent:"center",}}>
             <div style={{marginRight:"20px"}}>
-                <label>Select Country:</label>
                 <select value={selectedCountry} onChange={(e) => setSelectedCountry(e.target.value)}>
                     <option value="" disabled>Select Country</option>
                     {countries.map((country) => (
@@ -63,7 +62,6 @@ const LocationSelector = () => {
                 </select>
             </div>
             <div >
-                <label>Select State:</label>
                 <select value={selectedState} onChange={(e) => setSelectedState(e.target.value)} disabled={!selectedCountry}>
                     <option value="" disabled>Select State</option>
                     {states.map((state) => (
@@ -72,7 +70,6 @@ const LocationSelector = () => {
                 </select>
             </div>
             <div style={{marginLeft:"20px"}}>
-                <label>Select City:</label>
                 <select value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)} disabled={!selectedState}>
                     <option value="" disabled>Select City</option>
                     {cities.map((city) => (
